@@ -1,6 +1,6 @@
 import math
-x=[5,15,25,35,45,55]   #input vaue of X
-y=[6,15,19,17,14,9]       #input vaue of y
+x = list(map(int, input().split(',')))  #input vaue of X
+y = list(map(int, input().split(',')))  #input vaue of y    
 
 sum_x=0
 sum_y=0
@@ -23,8 +23,6 @@ for k in y:
 x_bar=sum_x/len(x)
 
 y_bar=sum_y/len(y)
-
-
 
 correlation_coffecient=(sum(xy)-(len(x)*x_bar*y_bar))/math.sqrt((sum(x_square)-(len(x)*x_bar*x_bar))*(sum(y_square)-(len(x)*y_bar*y_bar)))
 
